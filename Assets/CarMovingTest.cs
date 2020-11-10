@@ -7,7 +7,7 @@ public class CarMovingTest : MonoBehaviour
 
     public Rigidbody rb;
     public Transform car;
-    public float speed = 6f;
+    public float speed = 25;
 
 
     Vector3 rotationRight = new Vector3(0, 30, 0);
@@ -21,11 +21,13 @@ public class CarMovingTest : MonoBehaviour
     {
         if (Input.GetKey("w"))
         {
-            transform.Translate(forward * speed * Time.deltaTime); 
+            //transform.Translate(forward * speed * Time.deltaTime);
+            rb.AddForce(transform.forward * speed); 
         }
         if (Input.GetKey("s"))
         {
-            transform.Translate(backward * speed * Time.deltaTime); 
+            //transform.Translate(backward * speed * Time.deltaTime);
+            rb.AddForce(transform.forward * -speed);
         }
         if (Input.GetKey("d"))
         {
