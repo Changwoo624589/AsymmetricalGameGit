@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class CarCollisionTest : MonoBehaviour
 {
+
+    public AudioSource ahh; 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +17,13 @@ public class CarCollisionTest : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("OldPerson"))
+        {
+            ahh.Play(); 
+        }
     }
 }
