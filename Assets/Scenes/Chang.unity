@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2138677392}
-  m_IndirectSpecularColor: {r: 0.2850269, g: 0.3713935, b: 0.49601045, a: 1}
+  m_IndirectSpecularColor: {r: 0.28502586, g: 0.37139237, b: 0.4960093, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -878,7 +878,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 212814955}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -31.22211, y: -29.731133, z: -14.042431}
+  m_LocalPosition: {x: -31.22211, y: 0, z: -14.042431}
   m_LocalScale: {x: 1.5600973, y: 1, z: 16.335014}
   m_Children: []
   m_Father: {fileID: 339575335}
@@ -1098,7 +1098,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 339575334}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.277889, y: 29.801132, z: 30.84243}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1267529814}
@@ -1593,7 +1593,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 523322476}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -46.622112, y: -29.731133, z: -14.042431}
+  m_LocalPosition: {x: -46.622112, y: 0, z: -14.042431}
   m_LocalScale: {x: 1.5600973, y: 1, z: 16.335014}
   m_Children: []
   m_Father: {fileID: 339575335}
@@ -1689,7 +1689,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 565554347}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -62.122112, y: -29.731133, z: -14.042431}
+  m_LocalPosition: {x: -62.122112, y: 0, z: -14.042431}
   m_LocalScale: {x: 1.5600973, y: 1, z: 16.335014}
   m_Children: []
   m_Father: {fileID: 339575335}
@@ -2261,6 +2261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d0cfe40b49c9794abf0e4221b5703bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ahh: {fileID: 0}
 --- !u!114 &934734344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2276,6 +2277,10 @@ MonoBehaviour:
   rb: {fileID: 934734345}
   car: {fileID: 934734340}
   speed: 25
+  wheel1Animator: {fileID: 0}
+  wheel2Animator: {fileID: 0}
+  wheel3Animator: {fileID: 0}
+  wheel4Animator: {fileID: 0}
 --- !u!54 &934734345
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2500,6 +2505,8 @@ MonoBehaviour:
   limit:
   - {fileID: 1338460213}
   - {fileID: 1063776828}
+  driver: {fileID: 0}
+  vomit: {fileID: 0}
 --- !u!1 &1041249825
 GameObject:
   m_ObjectHideFlags: 0
@@ -2657,6 +2664,10 @@ MonoBehaviour:
   rb: {fileID: 0}
   car: {fileID: 1063982456}
   speed: 6
+  wheel1Animator: {fileID: 0}
+  wheel2Animator: {fileID: 0}
+  wheel3Animator: {fileID: 0}
+  wheel4Animator: {fileID: 0}
 --- !u!4 &1063982456
 Transform:
   m_ObjectHideFlags: 0
@@ -3336,7 +3347,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1267529810}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 85.92789, y: -29.731133, z: -101.064705}
+  m_LocalPosition: {x: 85.92789, y: 0, z: -101.064705}
   m_LocalScale: {x: 1, y: 1, z: 6.2531}
   m_Children: []
   m_Father: {fileID: 339575335}
@@ -3499,6 +3510,10 @@ MonoBehaviour:
   rb: {fileID: 0}
   car: {fileID: 1344722122}
   speed: 6
+  wheel1Animator: {fileID: 0}
+  wheel2Animator: {fileID: 0}
+  wheel3Animator: {fileID: 0}
+  wheel4Animator: {fileID: 0}
 --- !u!4 &1344722122
 Transform:
   m_ObjectHideFlags: 0
