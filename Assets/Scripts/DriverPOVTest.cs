@@ -21,17 +21,18 @@ public class DriverPOVTest : MonoBehaviour
 
     void FixedUpdate()
     {
-        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
+        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity*Time.deltaTime;
         //float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+        //Debug.Log(mouseX);
 
         //xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
-
-        transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
-
-        playerBody.Rotate(Vector3.up * mouseX);
+        xRotation = Mathf.Clamp(xRotation, -70f, 70f);
+        mouseX = Mathf.Clamp(mouseX, -30f, 30f);
+        //transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+        this.transform.Rotate (Vector3.up * mouseX);
+        playerBody.Rotate (Vector3.up * mouseX);
         //This rotation can be put in for the final model, maybe only attached to the head, so the model rotates in direction of the camera// 
-
+        
 
 
     }
