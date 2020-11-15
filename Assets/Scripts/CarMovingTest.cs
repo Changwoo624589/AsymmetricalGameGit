@@ -9,8 +9,9 @@ public class CarMovingTest : MonoBehaviour
     public Rigidbody rb;
     public Transform car;
     public float speed = 25;
-
-
+    public Transform steeringWheel;
+    public float swRot;
+    public float swRotSpeed;
     Vector3 rotationRight = new Vector3(0, 30, 0);
     Vector3 rotationLeft = new Vector3(0, -30, 0);
 
@@ -28,6 +29,7 @@ public class CarMovingTest : MonoBehaviour
     {
         if (Input.GetKey("w"))
         {
+            
             //transform.Translate(forward * speed * Time.deltaTime);
             rb.AddForce(transform.forward * speed);
            
@@ -59,6 +61,11 @@ public class CarMovingTest : MonoBehaviour
         }
         if (Input.GetKey("d"))
         {
+            //steeringWheel Script
+            if (swRot > 0) { swRot = 0; }
+            swRot -= swRotSpeed*Time.fixedDeltaTime;
+            steeringWheel.Rotate(0, 0, swRot);
+            //
             Quaternion deltaRotationRight = Quaternion.Euler(rotationRight * Time.deltaTime * 2);
             rb.MoveRotation(rb.rotation * deltaRotationRight);
             
@@ -71,6 +78,11 @@ public class CarMovingTest : MonoBehaviour
         }
         if (Input.GetKey("a"))
         {
+            //steeringWheel Script
+            if (swRot < 0) { swRot = 0; }
+            swRot += swRotSpeed * Time.fixedDeltaTime;
+            steeringWheel.Rotate(0, 0, swRot);
+            //
             Quaternion deltaRotationLeft = Quaternion.Euler(rotationLeft * Time.deltaTime * 2);
             rb.MoveRotation(rb.rotation * deltaRotationLeft);
           
