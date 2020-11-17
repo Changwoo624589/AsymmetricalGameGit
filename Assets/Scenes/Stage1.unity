@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2138677392}
-  m_IndirectSpecularColor: {r: 0.2850269, g: 0.3713935, b: 0.49601045, a: 1}
+  m_IndirectSpecularColor: {r: 0.28502586, g: 0.37139237, b: 0.4960093, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2513,7 +2513,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6cc56099bce539f4d9dc3e36a1107884, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2619,6 +2619,7 @@ MonoBehaviour:
   wheel2Animator: {fileID: 1985968139}
   wheel3Animator: {fileID: 1854888241}
   wheel4Animator: {fileID: 1528925056}
+  driving_sound: {fileID: 0}
 --- !u!54 &934734345
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2660,7 +2661,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 34b6f984a6f06994294a24e039cbaa5a, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.227
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2756,7 +2757,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 10dcf7f065f768946901d41ab7272857, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.338
+  m_Volume: 0.08
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5299,7 +5300,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &2135665933
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5590,6 +5591,14 @@ PrefabInstance:
       propertyPath: limit.Array.data[1]
       value: 
       objectReference: {fileID: 1063776828}
+    - target: {fileID: 1035021384, guid: 5644cf4ec8a82bd4686dd9bc03203f7b, type: 3}
+      propertyPath: car
+      value: 
+      objectReference: {fileID: 934734339}
+    - target: {fileID: 1035021384, guid: 5644cf4ec8a82bd4686dd9bc03203f7b, type: 3}
+      propertyPath: splashImg
+      value: 
+      objectReference: {fileID: 1468183024562846426, guid: f746c62502efd9b479d8a05be65328f9, type: 3}
     - target: {fileID: 3910384577354924735, guid: 5644cf4ec8a82bd4686dd9bc03203f7b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

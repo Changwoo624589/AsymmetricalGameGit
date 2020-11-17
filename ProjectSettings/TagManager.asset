@@ -8,6 +8,7 @@ TagManager:
   - StreetObstacle
   - OldPerson
   - Wiper
+  - Windshield
   layers:
   - Default
   - TransparentFX
