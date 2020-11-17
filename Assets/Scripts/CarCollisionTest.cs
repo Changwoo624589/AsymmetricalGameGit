@@ -25,5 +25,15 @@ public class CarCollisionTest : MonoBehaviour
         {
             ahh.Play(); 
         }
+
+        if (collision.gameObject.CompareTag("StreetObstacle"))
+        {
+           Healthbar.health -= 20f;
+        }
+
+        //  if (Healthbar.health == 0)
+        // {
+        //    SceneManager.LoadScene("GameOver");
+        // }
     }
 }
