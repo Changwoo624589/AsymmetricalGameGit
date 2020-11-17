@@ -107,14 +107,7 @@ public class CarMovingTest : MonoBehaviour
             wheel2Animator.SetBool("isDriving2", true);
             wheel3Animator.SetBool("isDriving3", true);
             wheel4Animator.SetBool("isDriving4", true);
-<<<<<<< HEAD
-  
-=======
 
-
-            //Animation controls below
-            //Not sure why getkey by itself doesn't play animations 
->>>>>>> c499b9d7a1583bd5a6633311397c3abf636d7346
 
         }
         
