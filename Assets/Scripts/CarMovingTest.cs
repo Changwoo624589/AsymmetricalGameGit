@@ -23,6 +23,9 @@ public class CarMovingTest : MonoBehaviour
     public Animator wheel3Animator;
     public Animator wheel4Animator; 
 
+    public AudioSource driving_sound;
+
+    bool soundPlayed = false;
 
     // Update is called once per frame
     void FixedUpdate()
@@ -37,14 +40,28 @@ public class CarMovingTest : MonoBehaviour
             wheel2Animator.SetBool("isDriving2", true);
             wheel3Animator.SetBool("isDriving3", true);
             wheel4Animator.SetBool("isDriving4", true);
+            
+            // driving_sound.Play();
+            if (!driving_sound.isPlaying && !soundPlayed)
+                {
+                    driving_sound.Play();
+                    soundPlayed = true;
+                }
 
         }
         else
         {
+            
             wheel1Animator.SetBool("isDriving", false);
             wheel2Animator.SetBool("isDriving2", false);
             wheel3Animator.SetBool("isDriving3", false);
             wheel4Animator.SetBool("isDriving4", false);
+                if (driving_sound.isPlaying && soundPlayed)
+                {
+                    driving_sound.Stop();
+                    soundPlayed = false;
+                }
+            // driving_sound.Stop();
 
         }
         if (Input.GetKey("s"))
@@ -90,9 +107,17 @@ public class CarMovingTest : MonoBehaviour
             wheel2Animator.SetBool("isDriving2", true);
             wheel3Animator.SetBool("isDriving3", true);
             wheel4Animator.SetBool("isDriving4", true);
+<<<<<<< HEAD
   
+=======
+
+
+            //Animation controls below
+            //Not sure why getkey by itself doesn't play animations 
+>>>>>>> c499b9d7a1583bd5a6633311397c3abf636d7346
 
         }
+        
     }
 
 }
