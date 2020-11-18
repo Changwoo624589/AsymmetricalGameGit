@@ -52,7 +52,6 @@ public class CarMovingTest : MonoBehaviour
             wheel3Animator.SetBool("isDriving3", true);
             wheel4Animator.SetBool("isDriving4", true);
             
-            driving_sound.Play();
             if (!driving_sound.isPlaying && !soundPlayed)
                 {
                     driving_sound.Play();
@@ -72,7 +71,6 @@ public class CarMovingTest : MonoBehaviour
                     driving_sound.Stop();
                     soundPlayed = false;
                 }
-            // driving_sound.Stop();
 
         }
         if (Input.GetAxis("Vertical") < 0)

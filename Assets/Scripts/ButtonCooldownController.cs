@@ -17,6 +17,10 @@ public class ButtonCooldownController : MonoBehaviour
     public Animator Wiper1Animator;
     public Animator Wiper2Animator;
 
+    public AudioSource horn;
+
+    bool hornPlayed = false;
+
     // Update is called once per frame
     void Update()
     {
@@ -49,6 +53,15 @@ public class ButtonCooldownController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.O))
         {
             isHornCooldown = true;
+                if(!horn.isPlaying && !hornPlayed)
+                {
+                    horn.Play();
+                    hornPlayed = true;
+                }else
+                {
+                            hornPlayed = false;
+                        
+                }
         }
         if (isHornCooldown)
         {

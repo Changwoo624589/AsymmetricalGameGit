@@ -8,12 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/IntroScene.unity
     guid: 5ce461de9fca65444b41b10dff45f90c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Caitlin.unity
     guid: c45eb007ba8a9744c8225ce72bf3c373
-  - enabled: 1
-    path: Assets/Scenes/Chang.unity
-    guid: a77e1a99cb2930943a264bde93a73251
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
