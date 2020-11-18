@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem; 
+using UnityEngine.InputSystem;
 
 public class CarMovingTest : MonoBehaviour
 {
@@ -9,14 +9,19 @@ public class CarMovingTest : MonoBehaviour
     public Rigidbody rb;
     public Transform car;
     public float speed = 25;
+
     public Transform steeringWheel;
     public float swRot;
     public float swRotSpeed;
+
     Vector3 rotationRight = new Vector3(0, 30, 0);
     Vector3 rotationLeft = new Vector3(0, -30, 0);
 
     Vector3 forward = new Vector3(0, 0, 1);
     Vector3 backward = new Vector3(0, 0, -1);
+
+    float right;
+    float left;
 
     public Animator wheel1Animator;
     public Animator wheel2Animator;
@@ -27,10 +32,16 @@ public class CarMovingTest : MonoBehaviour
 
     bool soundPlayed = false;
 
+    private void Start()
+    {
+        right = Input.GetAxisRaw("Horizontal") + 1;
+        left = Input.GetAxisRaw("Horizontal") - 1;
+    }
+
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (Input.GetKey("w"))
+        if (Input.GetAxis("Vertical") > 0)
         {
             
             //transform.Translate(forward * speed * Time.deltaTime);
@@ -41,7 +52,7 @@ public class CarMovingTest : MonoBehaviour
             wheel3Animator.SetBool("isDriving3", true);
             wheel4Animator.SetBool("isDriving4", true);
             
-            // driving_sound.Play();
+            driving_sound.Play();
             if (!driving_sound.isPlaying && !soundPlayed)
                 {
                     driving_sound.Play();
@@ -64,9 +75,9 @@ public class CarMovingTest : MonoBehaviour
             // driving_sound.Stop();
 
         }
-        if (Input.GetKey("s"))
+        if (Input.GetAxis("Vertical") < 0)
         {
-            //transform.Translate(backward * speed * Time.deltaTime);
+           
             rb.AddForce(transform.forward * -speed);
             
             wheel1Animator.SetBool("isDriving", true);
@@ -76,13 +87,13 @@ public class CarMovingTest : MonoBehaviour
 
 
         }
-        if (Input.GetKey("d"))
+        if (Input.GetAxis("Horizontal") > 0)
         {
             //steeringWheel Script
             if (swRot > 0) { swRot = 0; }
             swRot -= swRotSpeed*Time.fixedDeltaTime;
             steeringWheel.Rotate(0, 0, swRot);
-            //
+         
             Quaternion deltaRotationRight = Quaternion.Euler(rotationRight * Time.deltaTime * 2);
             rb.MoveRotation(rb.rotation * deltaRotationRight);
             
@@ -93,13 +104,13 @@ public class CarMovingTest : MonoBehaviour
 
 
         }
-        if (Input.GetKey("a"))
+        if (Input.GetAxis("Horizontal") <0)
         {
             //steeringWheel Script
             if (swRot < 0) { swRot = 0; }
             swRot += swRotSpeed * Time.fixedDeltaTime;
             steeringWheel.Rotate(0, 0, swRot);
-            //
+          
             Quaternion deltaRotationLeft = Quaternion.Euler(rotationLeft * Time.deltaTime * 2);
             rb.MoveRotation(rb.rotation * deltaRotationLeft);
           
