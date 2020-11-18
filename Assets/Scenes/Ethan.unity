@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2138677392}
-  m_IndirectSpecularColor: {r: 0.28502676, g: 0.37139347, b: 0.49601015, a: 1}
+  m_IndirectSpecularColor: {r: 0.2850269, g: 0.3713935, b: 0.49601045, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -40098,6 +40098,7 @@ GameObject:
   - component: {fileID: 6297074154276077832}
   - component: {fileID: 1048777566213107217}
   - component: {fileID: 1058748505647412757}
+  - component: {fileID: 1464795861216763335}
   m_Layer: 0
   m_Name: polySurface86
   m_TagString: Untagged
@@ -40105,6 +40106,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &1464795861216763335
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464795861216763334}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6176049, y: 0.014326854, z: 1.2798513}
+  m_Center: {x: 0, y: 0.0000000018626451, z: -0.000000029802322}
 --- !u!4 &1519384849423295004
 Transform:
   m_ObjectHideFlags: 0

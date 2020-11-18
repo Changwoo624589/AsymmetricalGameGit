@@ -20,7 +20,7 @@ public class PlayerHood : MonoBehaviour
     void Start()
     {
         vomitable = true;
-        timerV = 4f;
+        timerV = 7f;
         tr = GetComponent<Transform>();
        // vomit.emissionRate = 0; 
     }
@@ -60,7 +60,7 @@ public class PlayerHood : MonoBehaviour
         if (timerV <= 0)
         {
             vomitable = true;
-            timerV = 4f;
+            timerV = 7f;
         }
     }
     private void FixedUpdate()

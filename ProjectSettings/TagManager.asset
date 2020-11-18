@@ -9,6 +9,7 @@ TagManager:
   - OldPerson
   - Wiper
   - Windshield
+  - Daycare
   layers:
   - Default
   - TransparentFX
