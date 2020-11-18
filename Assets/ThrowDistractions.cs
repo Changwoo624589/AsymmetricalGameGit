@@ -18,7 +18,7 @@ public class ThrowDistractions : MonoBehaviour
     }
     void FixedUpdate()
     {
-        Vector3 direction = new Vector3(0f, 0f, 1f);
+        Vector3 direction = new Vector3(-2f, 0f, 1f);
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
