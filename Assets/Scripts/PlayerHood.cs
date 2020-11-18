@@ -14,7 +14,7 @@ public class PlayerHood : MonoBehaviour
     public bool vomitable;
     private float timerV;
     // public Transform driver;
-    // public ParticleSystem vomit;
+     public ParticleSystem vomit;
 
 
     void Start()
@@ -22,7 +22,7 @@ public class PlayerHood : MonoBehaviour
         vomitable = true;
         timerV = 7f;
         tr = GetComponent<Transform>();
-       // vomit.emissionRate = 0; 
+        vomit.emissionRate = 0; 
     }
 
     
@@ -51,7 +51,7 @@ public class PlayerHood : MonoBehaviour
             vomitable = false;
             splash.transform.parent = car.transform;
 
-            // vomit.Emit(15);
+             vomit.Emit(25);
         }
         if (!vomitable)
         {
