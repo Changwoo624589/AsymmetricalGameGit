@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class ThrowDistractions : MonoBehaviour
 {
-    public float toyVelocity = 0.5f;
+     float toyVelocity = 30f;
     public float canThrow = 0f;
 
-    public GameObject ball;
-    public GameObject ball1;
+   
+    public GameObject ballPrefab;
 
-    public Rigidbody rb;
+
 
     private void Start()
     {
@@ -22,15 +22,14 @@ public class ThrowDistractions : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            
 
-            GameObject ball = (GameObject)(Instantiate(
-                ball1, transform.position, Quaternion.identity));
+            GameObject newBall = Instantiate(ballPrefab, transform.position, Quaternion.identity);
 
 
-            ball.GetComponent<Rigidbody>().velocity = direction * toyVelocity;
+            Rigidbody rb = newBall.GetComponent<Rigidbody>();
 
-            rb.AddForce(gameObject.transform.forward * toyVelocity); 
+
+            rb.AddForce(gameObject.transform.forward * toyVelocity + Vector3.up * 30f); 
             //canThrow = Time.time + 1f; 
         }
     }
