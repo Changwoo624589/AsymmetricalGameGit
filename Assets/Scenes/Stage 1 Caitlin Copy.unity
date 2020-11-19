@@ -327,6 +327,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PracticeSign (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 4976985308312273993, guid: 5efb97aac09656945bd1c0eb66eb0726, type: 3}
+      propertyPath: m_TagString
+      value: StreetObstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 5985096399741273176, guid: 5efb97aac09656945bd1c0eb66eb0726, type: 3}
       propertyPath: m_LocalPosition.x
       value: 35.208286
@@ -2039,6 +2043,10 @@ PrefabInstance:
     - target: {fileID: 145203696881571237, guid: 8fdfdc422ec9a1f48ae47ae1530092de, type: 3}
       propertyPath: m_Name
       value: OldPersonPlaceholder (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 145203696881571237, guid: 8fdfdc422ec9a1f48ae47ae1530092de, type: 3}
+      propertyPath: m_TagString
+      value: OldPerson
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fdfdc422ec9a1f48ae47ae1530092de, type: 3}
@@ -3755,6 +3763,10 @@ PrefabInstance:
     - target: {fileID: 4976985308312273993, guid: 5efb97aac09656945bd1c0eb66eb0726, type: 3}
       propertyPath: m_Name
       value: PracticeSign (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4976985308312273993, guid: 5efb97aac09656945bd1c0eb66eb0726, type: 3}
+      propertyPath: m_TagString
+      value: StreetObstacle
       objectReference: {fileID: 0}
     - target: {fileID: 5985096399741273176, guid: 5efb97aac09656945bd1c0eb66eb0726, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6996,6 +7008,10 @@ PrefabInstance:
     - target: {fileID: 4976985308312273993, guid: 5efb97aac09656945bd1c0eb66eb0726, type: 3}
       propertyPath: m_Name
       value: PracticeSign (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4976985308312273993, guid: 5efb97aac09656945bd1c0eb66eb0726, type: 3}
+      propertyPath: m_TagString
+      value: StreetObstacle
       objectReference: {fileID: 0}
     - target: {fileID: 5985096399741273176, guid: 5efb97aac09656945bd1c0eb66eb0726, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11682,6 +11698,10 @@ PrefabInstance:
     - target: {fileID: 145203696881571237, guid: 8fdfdc422ec9a1f48ae47ae1530092de, type: 3}
       propertyPath: m_Name
       value: OldPersonPlaceholder (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 145203696881571237, guid: 8fdfdc422ec9a1f48ae47ae1530092de, type: 3}
+      propertyPath: m_TagString
+      value: OldPerson
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fdfdc422ec9a1f48ae47ae1530092de, type: 3}
@@ -20168,6 +20188,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OldPersonPlaceholder (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 145203696881571237, guid: 8fdfdc422ec9a1f48ae47ae1530092de, type: 3}
+      propertyPath: m_TagString
+      value: OldPerson
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fdfdc422ec9a1f48ae47ae1530092de, type: 3}
 --- !u!1 &860502386
@@ -20581,6 +20605,10 @@ PrefabInstance:
     - target: {fileID: 145203696881571237, guid: 8fdfdc422ec9a1f48ae47ae1530092de, type: 3}
       propertyPath: m_Name
       value: OldPersonPlaceholder (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 145203696881571237, guid: 8fdfdc422ec9a1f48ae47ae1530092de, type: 3}
+      propertyPath: m_TagString
+      value: OldPerson
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fdfdc422ec9a1f48ae47ae1530092de, type: 3}
@@ -23857,6 +23885,10 @@ PrefabInstance:
     - target: {fileID: 4976985308312273993, guid: 5efb97aac09656945bd1c0eb66eb0726, type: 3}
       propertyPath: m_Name
       value: PracticeSign (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4976985308312273993, guid: 5efb97aac09656945bd1c0eb66eb0726, type: 3}
+      propertyPath: m_TagString
+      value: StreetObstacle
       objectReference: {fileID: 0}
     - target: {fileID: 5985096399741273176, guid: 5efb97aac09656945bd1c0eb66eb0726, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27298,6 +27330,10 @@ PrefabInstance:
     - target: {fileID: 4976985308312273993, guid: 5efb97aac09656945bd1c0eb66eb0726, type: 3}
       propertyPath: m_Name
       value: PracticeSign (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4976985308312273993, guid: 5efb97aac09656945bd1c0eb66eb0726, type: 3}
+      propertyPath: m_TagString
+      value: StreetObstacle
       objectReference: {fileID: 0}
     - target: {fileID: 5985096399741273176, guid: 5efb97aac09656945bd1c0eb66eb0726, type: 3}
       propertyPath: m_LocalPosition.x
@@ -36452,6 +36488,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PracticeSign (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4976985308312273993, guid: 5efb97aac09656945bd1c0eb66eb0726, type: 3}
+      propertyPath: m_TagString
+      value: StreetObstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 5985096399741273176, guid: 5efb97aac09656945bd1c0eb66eb0726, type: 3}
       propertyPath: m_LocalPosition.x
       value: -58.19
@@ -36869,6 +36909,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OldPersonPlaceholder (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 145203696881571237, guid: 8fdfdc422ec9a1f48ae47ae1530092de, type: 3}
+      propertyPath: m_TagString
+      value: OldPerson
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fdfdc422ec9a1f48ae47ae1530092de, type: 3}
 --- !u!1001 &1646537454
@@ -36925,6 +36969,10 @@ PrefabInstance:
     - target: {fileID: 145203696881571237, guid: 8fdfdc422ec9a1f48ae47ae1530092de, type: 3}
       propertyPath: m_Name
       value: OldPersonPlaceholder (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 145203696881571237, guid: 8fdfdc422ec9a1f48ae47ae1530092de, type: 3}
+      propertyPath: m_TagString
+      value: OldPerson
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fdfdc422ec9a1f48ae47ae1530092de, type: 3}
@@ -38452,6 +38500,10 @@ PrefabInstance:
     - target: {fileID: 4976985308312273993, guid: 5efb97aac09656945bd1c0eb66eb0726, type: 3}
       propertyPath: m_Name
       value: PracticeSign (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4976985308312273993, guid: 5efb97aac09656945bd1c0eb66eb0726, type: 3}
+      propertyPath: m_TagString
+      value: StreetObstacle
       objectReference: {fileID: 0}
     - target: {fileID: 5985096399741273176, guid: 5efb97aac09656945bd1c0eb66eb0726, type: 3}
       propertyPath: m_LocalPosition.x
@@ -40711,6 +40763,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OldPersonPlaceholder (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 145203696881571237, guid: 8fdfdc422ec9a1f48ae47ae1530092de, type: 3}
+      propertyPath: m_TagString
+      value: OldPerson
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fdfdc422ec9a1f48ae47ae1530092de, type: 3}
 --- !u!1001 &1850125891
@@ -40865,6 +40921,10 @@ PrefabInstance:
     - target: {fileID: 4976985308312273993, guid: 5efb97aac09656945bd1c0eb66eb0726, type: 3}
       propertyPath: m_Name
       value: PracticeSign (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4976985308312273993, guid: 5efb97aac09656945bd1c0eb66eb0726, type: 3}
+      propertyPath: m_TagString
+      value: StreetObstacle
       objectReference: {fileID: 0}
     - target: {fileID: 5985096399741273176, guid: 5efb97aac09656945bd1c0eb66eb0726, type: 3}
       propertyPath: m_LocalPosition.x
@@ -45689,6 +45749,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OldPersonPlaceholder (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 145203696881571237, guid: 8fdfdc422ec9a1f48ae47ae1530092de, type: 3}
+      propertyPath: m_TagString
+      value: OldPerson
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fdfdc422ec9a1f48ae47ae1530092de, type: 3}
 --- !u!1 &2041992198
@@ -48272,6 +48336,10 @@ PrefabInstance:
     - target: {fileID: 4976985308312273993, guid: 5efb97aac09656945bd1c0eb66eb0726, type: 3}
       propertyPath: m_Name
       value: PracticeSign (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4976985308312273993, guid: 5efb97aac09656945bd1c0eb66eb0726, type: 3}
+      propertyPath: m_TagString
+      value: StreetObstacle
       objectReference: {fileID: 0}
     - target: {fileID: 5985096399741273176, guid: 5efb97aac09656945bd1c0eb66eb0726, type: 3}
       propertyPath: m_LocalPosition.x
