@@ -1166,8 +1166,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6, y: -22}
-  m_SizeDelta: {x: 730.0376, y: 325.56348}
+  m_AnchoredPosition: {x: -0.7, y: -17.7}
+  m_SizeDelta: {x: 769.58374, y: 413.3354}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &602178622
 MonoBehaviour:
@@ -1191,7 +1191,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 3e4c60719d8db6f478ee06a1b2be6967, type: 3}
-    m_FontSize: 100
+    m_FontSize: 45
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1202,7 +1202,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: instructions placeholder
+  m_Text: 'WASD/arrow keys to drive
+
+
+    J + L to move on hood, I to throw up
+
+
+    P
+    for wipers, O to honk horn, U to throw toy'
 --- !u!222 &602178623
 CanvasRenderer:
   m_ObjectHideFlags: 0
