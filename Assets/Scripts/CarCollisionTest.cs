@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CarCollisionTest : MonoBehaviour
 {
@@ -23,7 +24,8 @@ public class CarCollisionTest : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("OldPerson"))
         {
-            ahh.Play(); 
+            ahh.Play();
+            Healthbar.health -= 10f; 
         }
 
         if (collision.gameObject.CompareTag("StreetObstacle"))
@@ -31,9 +33,14 @@ public class CarCollisionTest : MonoBehaviour
            Healthbar.health -= 20f;
         }
 
-        //  if (Healthbar.health == 0)
-        // {
-        //    SceneManager.LoadScene("GameOver");
-        // }
+         if (Healthbar.health == 0f)
+        {
+           SceneManager.LoadScene("GameOver");
+        }
+         if (collision.gameObject.CompareTag("Daycare"))
+        {
+            SceneManager.LoadScene("Win");
+        }
+
     }
 }

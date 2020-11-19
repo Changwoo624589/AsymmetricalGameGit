@@ -8,17 +8,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/IntroScene.unity
     guid: 5ce461de9fca65444b41b10dff45f90c
-  - enabled: 0
-    path: 
-    guid: c45eb007ba8a9744c8225ce72bf3c373
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: d1c3109bdb54ad54c8a2b2838528e640
   - enabled: 1
     path: Assets/Scenes/Stage 1 Caitlin Copy.unity
     guid: b1c7bdfb0f538a14788816d63866aca2
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: a1cf80c61cacace41881d1d07c256164
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 6c8b7bd592dfd19419cdb770ef9efef5
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 0332ec0b3c922ef4db1984158d8613b4, type: 2}
