@@ -19,6 +19,7 @@ public class ThrowDistractions : MonoBehaviour
         distractions = GameObject.FindGameObjectsWithTag("Toy");
 
         index = Random.Range(0, distractions.Length - 1);
+        
 
         rbs = new Rigidbody[distractions.Length - 1];
 
@@ -35,10 +36,9 @@ public class ThrowDistractions : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.U) && Time.time > canThrow)
         {
-            index = Random.Range(0, distractions.Length - 1);
-
+            //index = Random.Range(0, distractions.Length - 1);
             Instantiate(distractions[index], transform.position, Quaternion.identity);
-
+           
             for (int i = 0; i < rbs.Length; i++)
             {
                 rbs[i].AddForce(gameObject.transform.forward * toyVelocity + Vector3.up * 30f);
