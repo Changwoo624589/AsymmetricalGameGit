@@ -8,7 +8,12 @@ public class StartButtonScript : MonoBehaviour
 {
     public void OnMouseDown()
     {
-        SceneManager.LoadScene("Caitlin");
+        SceneManager.LoadScene("Stage 1 Caitlin Copy");
+    }
+
+    public void Menu()
+    {
+        SceneManager.LoadScene("IntroScene");
     }
 
 }
